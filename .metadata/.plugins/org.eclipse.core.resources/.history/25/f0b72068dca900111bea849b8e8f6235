@@ -54,11 +54,7 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void somefunction(){
-		static int localcount=0;
-		localcount++;
-	}
-	int maincount=0;
+
 /* USER CODE END 0 */
 
 /**
@@ -69,7 +65,9 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+	void somefunction(){
+		static localcount++;
+	}
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -101,10 +99,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-	  HAL_Delay(1000);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_Pin_5, SET);
+	  HAL_DELAY(1000);
 	  maincount++;
-	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_Pin_5, RESET);
 	  maincount++;
 	  somefunction();
 	  HAL_Delay(1000);
