@@ -248,3 +248,21 @@ Please upgrade the ST-LINK firmware using the upgrade tool. Reconnect ST-LINK an
 !MESSAGE Error in initializing ST-LINK device.
 Reason: (6) ST-LINK firmware upgrade required.
 Please upgrade the ST-LINK firmware using the upgrade tool. Reconnect ST-LINK and click OK
+!SESSION 2026-09-07 22:14:48.821 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-09-07 22:15:20.655
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-09-07 22:15:20.665
+!MESSAGE Log4j2 initialized with config file D:\Neeraj_STM32_Projects\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-09-07 22:15:32.807
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-09-07 22:19:11.012
+!MESSAGE Indexed 'Advanced debugging' (22 sources, 82 headers) in 5.98 sec: 5,046 declarations; 26,619 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0063%)
