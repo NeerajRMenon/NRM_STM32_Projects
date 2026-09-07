@@ -63,7 +63,7 @@ int _write(int file, char *ptr, int len){
 		ITM_SendChar((*ptr++));}
 		return len;
 }
-int value;
+
 uint8_t count=0; // I: the variable we are incrementing and tracing.
 /* USER CODE END 0 */
 
@@ -108,9 +108,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
 	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-
 	  count++; // I: incrementing the count variable.
 	  printf("Hello World, count= %d\n", count);
 	  HAL_Delay(250);
